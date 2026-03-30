@@ -1,0 +1,158 @@
+/* Βασικές Ρυθμίσεις */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background-color: #fff;
+    line-height: 1.6;
+}
+h1, h2, h3, .logo-text {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Μενού Πλοήγησης (Header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.logo-text {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #bfa178; /* Χρυσό/Μπεζ χρώμα σπα */
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+nav a:hover, nav a.active {
+    color: #bfa178;
+}
+
+/* Κεντρική Ενότητα */
+.main-section, .contact-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.section-header, .contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header h1, .contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.section-header p, .contact-header p {
+    color: #777;
+    font-style: italic;
+}
+
+/* Διάταξη Δύο Στηλών (π.χ. για τη σελίδα επικοινωνίας) */
+.grid-layout, .contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+}
+
+/* Στήλη Πληροφοριών (Αριστερά) */
+.info-container h2, .contact-info-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.intro-text, .contact-intro-text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #666;
+}
+.service-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fcfcfc;
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+}
+.service-details p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+.highlight-text {
+     font-weight: 600;
+     color: #bfa178;
+}
+
+/* Στήλη Στοιχείων (Δεξιά) */
+.details-container, .contact-details-container {
+    background-color: #fafafa;
+    padding: 40px;
+    border: 1px solid #eee;
+}
+.details-container h2, .contact-details-container h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.detail-item {
+    margin-bottom: 25px;
+}
+.detail-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+.detail-item p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #999;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+    font-size: 13px;
+}
+footer a {
+    color: #ccc;
+}
+
+/* Responsive Design για Κινητά */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .grid-layout, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
