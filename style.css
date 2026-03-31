@@ -62,7 +62,7 @@ nav a:hover, nav a.active {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 2fr 3fr; /* Η στήλη της εικόνας λίγο μικρότερη */
+    grid-template-columns: 1fr;
     gap: 60px;
     align-items: center;
 }
@@ -282,6 +282,39 @@ nav a:hover, nav a.active {
 }
 .contact-card a:hover {
     color: #bfa178;
+}
+
+/* Policy Page */
+.policy-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.policy-section {
+    margin-bottom: 40px;
+}
+
+.policy-section h2 {
+    color: #bfa178;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.policy-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.policy-section blockquote {
+    background-color: #fcfcfc;
+    border-left: 4px solid #bfa178;
+    padding: 20px;
+    margin: 25px 0;
+    font-style: italic;
+    color: #333;
 }
 
 /* Footer */
